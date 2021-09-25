@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset="utf-8"/>
+    <meta name="" content="">
+    <title>Shooting Game</title>
+    <link rel="stylesheet" href="main.css" />
+    <script type="text/javascript" src="main.js"></script>
+  
+ </head>
+  <body>
+  <div class="row">
+    <div class="col-1">
+    <div class="card">
+    
+      <div class="card-header">
+      <div class="startbtn">
+       <button onclick="start()">START GAME</button>
+        </div>
+       <h1 id="kill1">PLAYER 1</h1>
+      </div>
+      <div class="card-body">
+       
+      
+    <input type="text"  id="player1" value="100" readonly>
+       
+       </div>
+      <div class="card-footer">
+       <table border="0" frame="box" cellpadding="10px" align="center" >
+         <tr>
+         <th>WON</th>
+         </tr>
+         <tr>
+           <td>
+             <input type="text" id="won1" value="0" readonly>
+           </td>
+         </tr>
+       </table>
+     <div class=" shootbtn">
+       <button onclick="shoot1()" id="btn1">SHOOT</button>
+      </div>
+      <div class="end" >
+         <h2 id="end"></h2> 
+      </div>
+        <h2 id="msg1"></h2>
+
+      </div>
+   </div>
+</div>
+    <div class="col-2">
+   <div class="card">
+      <div class="card-header">
+        <h1 id="kill2">PLAYER 2</h1>
+      </div>
+      <div class="card-body">
+       
+            <input type="text" id="player2" value="100" readonly>
+        
+      </div>
+      <div class="card-footer">
+    <table border="0" frame="box" cellpadding="10px" align="center">
+         <tr>
+         <th>WON</th>
+         </tr>
+         <tr>
+           <td>
+             <input type="text" id="won2" value="0" readonly>
+           </td>
+         </tr>
+       </table>
+        <div class=" shootbtn">
+        
+       <button onclick="shoot2()" id="btn2">SHOOT</button>
+      </div>
+   <h2 id="msg2"></h2> 
+    </div>
+ 
+    </div>
+    
+  </div>
+
+</div>
+</body>
+</html>
